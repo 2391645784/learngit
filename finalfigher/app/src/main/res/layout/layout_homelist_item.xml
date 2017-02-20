@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="1dp"
+    app:elevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/avater_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="3dp"
+        android:src="@drawable/avatar_img"/>
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/id_tv"
+            android:layout_margin="3dp"
+            android:text="作者"
+            android:layout_toRightOf="@+id/avater_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/avater_img"
+            android:id="@+id/title_img"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:padding="16dp"
+            android:src="@drawable/empty_img" />
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_marginRight="3dp"
+            android:maxLines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:text="测试文本"
+            android:layout_alignTop="@+id/title_img"
+            android:layout_toRightOf="@+id/title_img"
+            android:layout_toEndOf="@+id/title_img" />
+
+        <TextView
+            android:id="@+id/date_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日期"
+            android:layout_marginRight="3dp"
+            android:layout_alignBottom="@+id/title_img"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

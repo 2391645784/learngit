@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--选中蓝色正常白色文本-->
+    <item android:color="@color/white" android:state_selected="false"/>
+    <item android:color="@color/blue" android:state_selected="true"/>
+</selector>
