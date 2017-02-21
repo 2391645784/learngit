@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+<ImageView
+    android:layout_margin="3dp"
+    android:id="@+id/pic_img"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_width="120dp"
+    android:layout_height="100dp"
+    android:src="@drawable/emt_img"/>
+
+    <TextView
+        android:layout_toLeftOf="@+id/pic_img"
+        android:maxLines="2"
+        android:text="描述"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="6dp"
+
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/title_tv" />
+<TextView
+    android:id="@+id/dec_tv"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="6dp"
+    android:layout_alignBottom="@+id/pic_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="来自来自来自来自来自来自"/>
+</RelativeLayout>

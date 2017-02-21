@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shixin.finalfigher.fragment.MsgFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#007fff"
+
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/v2ex_textView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:text="V2EX"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/tech_btn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/cir_btn_left"
+                android:text="技术"
+                android:textColor="@drawable/tv_selector" />
+
+            <Button
+
+
+                android:id="@+id/creative_btn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cir_btn_right"
+                android:text="创意"
+                android:textColor="@drawable/tv_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000" />
+    <FrameLayout
+        android:id="@+id/container_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+
+
+
+</LinearLayout>
